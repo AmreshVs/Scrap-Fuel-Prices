@@ -8,7 +8,7 @@ let pr_users = require('../model/pr_users');
 let router = express.Router();
 let upload = multer();
 
-router.post('/signup', upload.none(), (req, res) => {
+router.post('/login', upload.none(), (req, res) => {
   let token = jwt.sign({id: req.body.email}, config.secret);
   let mysqlData = {
     fullname: req.body.fullname,

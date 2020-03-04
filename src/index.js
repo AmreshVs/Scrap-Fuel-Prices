@@ -8,13 +8,15 @@ let latestPrices = require('./routes/latest-prices');
 let latestCategory = require('./routes/latest-category');
 let todayPrices = require('./routes/today-prices');
 let weekPrices = require('./routes/week-prices');
+let login = require('./routes/login');
 let signup = require('./routes/signup');
+let updateProfile = require('./routes/update-profile');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.use([latestPrices, latestCategory, todayPrices, weekPrices]);
-app.use([signup]);
+app.use([login, signup, updateProfile]);
 
 cron.schedule('0 4 * * *', () => {
   axios.get('/latest-prices');
