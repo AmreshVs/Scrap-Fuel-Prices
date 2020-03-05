@@ -27,7 +27,7 @@ router.get('/latest-prices', function(req, res) {
                 pr_pricesbycity.create(sqldata);
               })
               .then(() => {
-                res.end('Inserted data!');
+                res.send('Inserted data!');
               })
           });
       }
@@ -49,7 +49,7 @@ router.get('/latest-prices', function(req, res) {
                 lastupdated_on: new Date().toISOString()
               })
               .then(() => {
-                res.end('Updated data!');
+                res.send('Updated data!');
               })
               .catch((err) => {
                 console.log(err);

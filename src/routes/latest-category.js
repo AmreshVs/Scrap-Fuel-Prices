@@ -27,7 +27,7 @@ router.get('/latest-category', function(req, res) {
                 pr_categorybycity.create(sqldata);
               })
               .then(() => {
-                res.end('Inserted data!');
+                res.send('Inserted data!');
               })
             });
           }
