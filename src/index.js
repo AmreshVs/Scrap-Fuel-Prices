@@ -18,6 +18,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use([latestPrices, latestCategory, todayPrices, weekPrices]);
 app.use([login, signup, updateProfile]);
 
+app.get('/', (req, res) => {
+  res.send('Hello');
+})
+
 cron.schedule('0 4 * * *', () => {
   axios.get('/latest-prices');
 });
