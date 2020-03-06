@@ -22,4 +22,4 @@ cron.schedule('0 4 * * *', () => {
   axios.get('/latest-prices');
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
