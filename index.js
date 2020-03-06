@@ -4,13 +4,13 @@ let app = express();
 let cron = require('node-cron');
 let bodyParser = require("body-parser");
 
-let latestPrices = require('./routes/latest-prices');
-let latestCategory = require('./routes/latest-category');
-let todayPrices = require('./routes/today-prices');
-let weekPrices = require('./routes/week-prices');
-let login = require('./routes/login');
-let signup = require('./routes/signup');
-let updateProfile = require('./routes/update-profile');
+let latestPrices = require('./src/routes/latest-prices');
+let latestCategory = require('./src/routes/latest-category');
+let todayPrices = require('./src/routes/today-prices');
+let weekPrices = require('./src/routes/week-prices');
+let login = require('./src/routes/login');
+let signup = require('./src/routes/signup');
+let updateProfile = require('./src/routes/update-profile');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
