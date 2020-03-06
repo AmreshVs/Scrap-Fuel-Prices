@@ -15,7 +15,7 @@ mysqlConnection.authenticate()
   .then(() => {
     console.log('Connection Established Successfully');
   })
-  .catch(() => {
+  .catch((err) => {
     console.log('Connection Failed!'+ JSON.stringify(err,undefined,2));
   })
 
