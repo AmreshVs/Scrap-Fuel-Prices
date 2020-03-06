@@ -2,7 +2,7 @@
 let Sequelize = require('sequelize');
 
 let mysqlConnection = new Sequelize('amconso4_feulprices', 'amconso4_vsml', '8u6@zh8p(S', {
-  host: '216.10.240.41',
+  host: process.env.DATABASE_URL,
   port: 3306,
   dialect: 'mysql',
   define:{
