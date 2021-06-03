@@ -355,7 +355,7 @@ CREATE TABLE `pr_users` (
 --
 
 INSERT INTO `pr_users` (`id`, `fullname`, `email`, `pass`, `mileage`, `token`) VALUES
-(1, 'Amresh Vs', 'amreshcse007@gmail.com', '$2a$10$bIRWCDnJ70EcADLe.rmjFuCCQ3RmG4QYpV2wjHis46SoJ9/QfmP7u', 45, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFtcmVzaGNzZTAwN0BnbWFpbC5jb20iLCJpYXQiOjE1ODMzMzUwNDZ9._frX94yqrkHMDcXdcLORtk00oKwT7G1ToOSXzUGy2ug');
+(1, 'Amresh Vs', 'amreshcse007@gmail.com', '$2a$10$bIRWCDnJ70EcADLe.rmjFuCCQ3RmG4QYpV2wjHis46SoJ9', 45, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFtcmVzaGNzZTAwN0BnbWFpbC5jb20iLCJpYXQiOjE1ODMzMzUwNDZ9._frX94yqrkHMDcXdcLORtk00oKwT7G1ToOSXzUGy2ug');
 
 --
 -- Indexes for dumped tables
